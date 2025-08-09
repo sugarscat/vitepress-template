@@ -139,4 +139,5 @@ vite.config.ts.timestamp-*
 
 # IDE
 .idea/*
+!.idea/icon.svg
 .vscode/*

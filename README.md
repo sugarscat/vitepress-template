@@ -7,7 +7,7 @@ VitePress is a Vite-powered static site generator.
 ## Usage
 
 > [!TIP]
-> 
+>
 > You need to have [pnpm](https://pnpm.io/) installed globally.
 
 Install dependencies:
