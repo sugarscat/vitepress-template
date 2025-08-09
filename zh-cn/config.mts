@@ -1,6 +1,8 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
+  lang: "zh-CN",
+  title: "VitePress",
   description: "一个 VitePress 模板",
 
   themeConfig: {

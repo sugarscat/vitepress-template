@@ -1,10 +1,11 @@
 // https://vitepress.dev/guide/custom-theme
 import mediumZoom from "medium-zoom";
-import "nprogress-v2/dist/index.css"; // 进度条样式
-import { NProgress } from "nprogress-v2/dist/index.js"; // 进度条组件
+// import "@bprogress/core/dist/index.css"; // 进度条样式
+import { BProgress } from "@bprogress/core"; // 进度条组件
 import { EnhanceAppContext, inBrowser, Theme, useRoute } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import { h, nextTick, onMounted, watch } from "vue";
+import "./bprogress.css"; // 进度条样式
 import "./style.css";
 
 export default {
@@ -30,12 +31,12 @@ export default {
   enhanceApp({ app, router, siteData }: EnhanceAppContext) {
     // 进度条组件
     if (inBrowser) {
-      NProgress.configure({ showSpinner: false });
+      BProgress.configure({ showSpinner: false });
       router.onBeforeRouteChange = () => {
-        NProgress.start(); // 开始进度条
+        BProgress.start(); // 开始进度条
       };
       router.onAfterRouteChange = () => {
-        NProgress.done(); // 停止进度条
+        BProgress.done(); // 停止进度条
       };
     }
   },

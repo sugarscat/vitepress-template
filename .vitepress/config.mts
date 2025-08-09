@@ -5,6 +5,7 @@ const gitLink = "https://github.com/sugarscat/vitepress-template";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/",
+  lang: "en-US",
   title: "Vitepress",
   description: "A VitePress Template",
   lastUpdated: true,

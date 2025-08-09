@@ -84,7 +84,7 @@ img {
     --vp-c-danger-3: var(--vp-c-red-3);
     --vp-c-danger-soft: var(--vp-c-red-soft);
 
-    --color-nav-background: rgba(251, 251, 253, 0.6);
+    --color-nav-background: rgba(255, 255, 255, 0.6);
     --color-nav-sidebar-background: rgba(246, 246, 247, 0.6);
 
     --vp-font-family-mono:
@@ -169,4 +169,13 @@ img {
 
 .VPSidebar .curtain {
     background-color: var(--color-nav-sidebar-background) !important;
+}
+
+/**
+ * Component: Progress Bar
+ * -------------------------------------------------------------------------- */
+.bprogress {
+    --bprogress-color: var(--vp-c-brand-1);
+    --bprogress-box-shadow: none;
+    position: fixed !important;
 }
