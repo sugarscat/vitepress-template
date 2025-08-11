@@ -159,6 +159,10 @@ img {
 /**
  * Component: VPNavBar
  * -------------------------------------------------------------------------- */
+.VPSidebar {
+    scrollbar-width: thin;
+}
+
 .VPSidebar .curtain,
 .VPNavBar.has-sidebar .wrapper .content .content-body,
 .VPLocalNav {
