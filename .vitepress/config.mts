@@ -38,6 +38,15 @@ export default defineConfig({
       },
     ],
 
+    search: {
+      provider: 'algolia',
+      options: {
+        appId: '···',
+        apiKey: '···',
+        indexName: 'vitepress-template',
+      }
+    },
+
     socialLinks: [{ icon: "github", link: gitLink }],
   },
 
