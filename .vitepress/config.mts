@@ -10,7 +10,7 @@ export default defineConfig({
   description: "A VitePress Template",
   lastUpdated: true,
   cleanUrls: true,
-  head: [["link", { rel: "icon", href: "/favicon.svg" }]],
+  head: [["link", { rel: "icon", href: "./favicon.svg" }]],
 
   rewrites: {
     "en/:rest*": ":rest*",
@@ -23,6 +23,8 @@ export default defineConfig({
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: "./favicon.svg",
+
     nav: [
       { text: "Home", link: "/" },
       { text: "Examples", link: "/markdown-examples" },
@@ -39,12 +41,12 @@ export default defineConfig({
     ],
 
     search: {
-      provider: 'algolia',
+      provider: "algolia",
       options: {
-        appId: '···',
-        apiKey: '···',
-        indexName: 'vitepress-template',
-      }
+        appId: "···",
+        apiKey: "···",
+        indexName: "vitepress-template",
+      },
     },
 
     socialLinks: [{ icon: "github", link: gitLink }],
