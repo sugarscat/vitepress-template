@@ -1,20 +1,22 @@
 import { defineConfig } from "vitepress";
 
-const gitLink = "https://github.com/sugarscat/vitepress-template";
+const GITHUB_URL = "https://github.com/sugarscat/vitepress-template";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/",
+  base: process.env.BASE_URL || "/",
   lang: "en-US",
   title: "Vitepress",
   description: "A VitePress Template",
-  lastUpdated: true,
-  cleanUrls: true,
   head: [["link", { rel: "icon", href: "./favicon.svg" }]],
 
   rewrites: {
     "en/:rest*": ":rest*",
   },
+
+  lastUpdated: true,
+  cleanUrls: true,
+  metaChunk: true,
 
   locales: {
     root: { label: "English" },
@@ -49,7 +51,7 @@ export default defineConfig({
       },
     },
 
-    socialLinks: [{ icon: "github", link: gitLink }],
+    socialLinks: [{ icon: "github", link: GITHUB_URL }],
   },
 
   markdown: {
@@ -70,7 +72,7 @@ export default defineConfig({
               return "Copiar código";
             case "ru":
               return "Скопировать код";
-            case "zh-cn":
+            case "zhCN":
               return "复制代码";
             default:
               return "Copy code";
