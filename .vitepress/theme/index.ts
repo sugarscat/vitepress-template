@@ -1,10 +1,9 @@
 // https://vitepress.dev/guide/custom-theme
 import mediumZoom from "medium-zoom";
-// import "@bprogress/core/dist/index.css"; // 进度条样式
-import { BProgress } from "@bprogress/core"; // 进度条组件
 import { EnhanceAppContext, inBrowser, Theme, useRoute } from "vitepress";
 import DefaultTheme from "vitepress/theme";
-import { h, nextTick, onMounted, watch } from "vue";
+import { nextTick, onMounted, watch } from "vue";
+import { BProgress } from "./bprogress"; // 进度条组件
 import "./bprogress.css"; // 进度条样式
 import "./style.css";
 

@@ -133,3 +133,5 @@ vite.config.ts.timestamp-*
 
 # IDE
 .idea
+
+pnpm-lock.yaml
