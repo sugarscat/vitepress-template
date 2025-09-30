@@ -26,11 +26,9 @@ VitePress is a Vite-powered static site generator.
 >           }
 >         }
 >         ```
->
 > 2. `crawler.json`
 >     - Change `index_name` to the name of your Algolia index.
 >     - Modify `start_urls` to your online web address.
->
 > 3. `.github/workflows/algolia.yml`
 >     - See the documentation to configure `Github Actions Secrets` yourself.
 
