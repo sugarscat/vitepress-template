@@ -12,24 +12,7 @@ VitePress is a Vite-powered static site generator.
 >
 > 1. `.vitepress/config.ts`
 >     - Replace the `GITHUB_URL` value with the address of your GitHub repository.
->     - Please modify the Algolia configuration below:
->         ```txt
->         themeConfig: {
->           search: {
->             provider: 'algolia',
->             options: {
->               appId: '···',
->               apiKey: '···',
->               indexName: 'vitepress-template',
->             }
->            },
->           }
->         }
->         ```
-> 2. `crawler.json`
->     - Change `index_name` to the name of your Algolia index.
->     - Modify `start_urls` to your online web address.
-> 3. `.github/workflows/algolia.yml`
+> 2. `.github/workflows/deploy.yml`
 >     - See the documentation to configure `Github Actions Secrets` yourself.
 
 > [!TIP]

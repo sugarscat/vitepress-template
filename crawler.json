@@ -1,6 +1,4 @@
 {
-  "index_name": "vitepress-template",
-  "start_urls": ["https://example.com/"],
   "rateLimit": 8,
   "maxDepth": 10,
   "selectors": {
