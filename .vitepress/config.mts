@@ -20,7 +20,7 @@ export default defineConfig({
 
   locales: {
     root: { label: "English" },
-    "zh-cn": { label: "简体中文" },
+    "zh-CN": { label: "简体中文" },
   },
 
   themeConfig: {
