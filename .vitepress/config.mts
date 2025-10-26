@@ -45,9 +45,9 @@ export default defineConfig({
     search: {
       provider: process.env.SEARCH_PROVIDER || "local",
       options: {
-        appId: process.env.APPLICATION_ID || '',
-        apiKey: process.env.SEARCH_API_KEY || '',
-        indexName: process.env.INDEX_NAME || '',
+        appId: process.env.APPLICATION_ID || "",
+        apiKey: process.env.SEARCH_API_KEY || "",
+        indexName: process.env.INDEX_NAME || "",
       },
     },
 

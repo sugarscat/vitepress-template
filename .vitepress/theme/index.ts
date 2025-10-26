@@ -2,9 +2,10 @@
 import mediumZoom from "medium-zoom";
 import { EnhanceAppContext, inBrowser, Theme, useRoute } from "vitepress";
 import DefaultTheme from "vitepress/theme";
-import { nextTick, onMounted, watch } from "vue";
+import { h, nextTick, onMounted, watch } from "vue";
 import { BProgress } from "./bprogress"; // 进度条组件
 import "./bprogress.css"; // 进度条样式
+import BackToTop from "./components/backtotop.vue";
 import "./style.css";
 
 export default {
@@ -24,9 +25,12 @@ export default {
       () => nextTick(() => initZoom())
     );
   },
-  // Layout: () => {
-  //   return h();
-  // },
+  Layout() {
+    return h(DefaultTheme.Layout, null, {
+      // 指定组件使用doc-footer-before插槽
+      "doc-footer-before": () => h(BackToTop),
+    });
+  },
   enhanceApp({ app, router, siteData }: EnhanceAppContext) {
     // 进度条组件
     if (inBrowser) {
