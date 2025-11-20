@@ -157,10 +157,10 @@ img {
 }
 
 /**
- * Component: VPNavBar
+ * Component: VPSidebar
  * -------------------------------------------------------------------------- */
 .VPSidebar {
-    scrollbar-width: thin;
+    /*scrollbar-width: thin;*/
 }
 
 .VPSidebar .curtain,
@@ -187,7 +187,7 @@ img {
 }
 
 /**
- * Component: Progress Bar
+ * Component: bprogress
  * -------------------------------------------------------------------------- */
 .bprogress {
     --bprogress-color: var(--vp-c-brand-1);
